@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* CSS reset */
 html {
     box-sizing: border-box;
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    scroll-padding-top: 70px;
 }
 
 *, *:before, *:after {
@@ -60,8 +62,8 @@ nav {
 }
 
 .nav-left li {
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
     display: inline-block;
     margin-right: 30px;
     color: #000;
@@ -70,6 +72,7 @@ nav {
 .nav-left a {
     text-decoration: none;
     color: #000;
+    transition: text-decoration 2s ease;
 }
 
 .nav-left a:hover {
@@ -78,11 +81,20 @@ nav {
     text-underline-offset: 7px;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    height: 2rem;
+}
+
 .nav-right img {
     height: 2rem;
     width: auto;
-    margin-left: 20px;
-}
+    margin-left: 30px;
+} 
 
 .hero-container {
     background-color: rgb(31, 22, 17);
@@ -94,7 +106,7 @@ nav {
     width: 70%;
 }
 
-.main-container {
+.about-container {
     max-width: 1600px;
     height: 4000px;
     padding: 50px;
