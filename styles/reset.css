@@ -1,0 +1,47 @@
+/* CSS Reset */
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, img, ul, ol, li,
+blockquote, hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+html {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Forms */
+button, input,
+select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
