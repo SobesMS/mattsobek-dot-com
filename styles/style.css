@@ -231,12 +231,6 @@ nav .social a:hover > svg {
     line-height: 1;
 }
 
-@media screen and (max-width: 600px) {
-    .site-title {
-        font-size: 3rem;
-    }
-}
-
 /* Global */
 section {
     padding-block: 8rem;
@@ -244,6 +238,15 @@ section {
 
 .section-title {
     font-size: 2.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .site-title {
+        font-size: 2.7rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
 }
 
 /* About Me formatting */
@@ -326,8 +329,8 @@ section {
 .item-screenshot {
     width: 230px;
     height: auto;
-    /* -webkit-mask-image: linear-gradient(to top, transparent 10%, black 70%);
-    mask-image: linear-gradient(to top, transparent 10%, black 70%); */
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, black 70%);
+    mask-image: linear-gradient(to top, transparent 10%, black 70%);
 }
 
 .portfolio-links {
