@@ -98,7 +98,7 @@ nav .social {
 }
 
 .social svg {
-    padding: 4px;
+    padding: 5px;
     fill: var(--body-dark);
 }
 
@@ -231,6 +231,12 @@ nav .social {
     text-align: start;
     white-space: nowrap;
     line-height: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .site-title {
+        font-size: 3rem;
+    }
 }
 
 .section-title {
@@ -371,6 +377,7 @@ section {
 @media screen and (max-width: 850px) {
     .email-form {
         grid-template-columns: auto 1fr;
+        width: 90%;
     }
     
     .email2 {
