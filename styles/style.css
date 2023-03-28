@@ -368,7 +368,7 @@ section {
     transform: translateY(2px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .email-form {
         grid-template-columns: auto 1fr;
     }
