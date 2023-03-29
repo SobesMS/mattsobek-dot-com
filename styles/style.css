@@ -397,7 +397,7 @@ section {
     resize: vertical;
 }
 
-.send {
+.submit {
     grid-area: 4 / 4 / span 1 / span 1;
     width: 100px;
     justify-self: end;
@@ -407,12 +407,12 @@ section {
     background: #d53369;
 }
 
-.send:hover {
+.submit:hover {
     background: #a8224f;
     cursor: pointer;
 }
 
-.send:active {
+.submit:active {
     transform: translateY(2px);
 }
 
@@ -436,7 +436,7 @@ section {
         resize: vertical;
     }
     
-    .send {
+    .submit {
         grid-area: 5 / 2 / span 1 / span 1;
     }
 }

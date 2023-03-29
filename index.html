@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- <script src="./scripts/validate-email.js"></script> -->
     <title>mattsobek.com</title>
 </head>
 <body>
@@ -134,16 +135,16 @@
         <div class="wrapper" id="contact">
             <h2 class="section-title">Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, a. Tempore, blanditiis ullam ea aliquam, numquam, sequi qui quibusdam repellat aperiam cumque alias officia omnis ratione! Eveniet hic reiciendis quidem.</p>
-            <form class="email-form">
+            <form class="email-form" id='email-form' method="POST" action="./scripts/contact.php">
                 <label class="fname1" for="fname">First Name:</label>
-                <input class="fname2" type="text" name="fname">
+                <input class="fname2" type="text" name="fname" required>
                 <label class="lname1" for="lname">Last Name:</label>
-                <input class="lname2" type="text" name="lname">
+                <input class="lname2" type="text" name="lname" required>
                 <label class="email1" for="email">Email Address:</label>
-                <input class="email2" type="text" name="email">
+                <input class="email2" type="email" name="email" required>
                 <label class="message1" for="message">Message:</label>
                 <textarea class="message2" name="message"></textarea>
-                <input class="send" type="submit" name="send" value="Send">
+                <input class="submit" type="submit" name="submit" value="Submit" required>
             </form>
         </div>
     </section>
