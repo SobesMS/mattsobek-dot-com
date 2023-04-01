@@ -343,13 +343,12 @@ section {
 .contact {
     background: linear-gradient(0deg, #d53369 0%, #daae51 100%);
     color: var(--body-light);
+    padding-bottom: 4rem;
     --mask:
-        radial-gradient(56.60px at 50% 78.00px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-        radial-gradient(56.60px at 50% -48px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-        radial-gradient(56.60px at 50% calc(100% - 78.00px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
-        radial-gradient(56.60px at 50% calc(100% + 48.00px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+      radial-gradient(56.60px at 50% 78.00px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+      radial-gradient(56.60px at 50% -48px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
     -webkit-mask: var(--mask);
-    mask: var(--mask);
+            mask: var(--mask);
 }
 
 #contact {
