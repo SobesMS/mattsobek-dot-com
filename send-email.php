@@ -39,6 +39,7 @@
         }
         
         mail($email_to, $email_subject, $email_content, $email_headers);
+        header("Location: index.html");
     } else {
         echo "An error occurred.";
     }
