@@ -11,6 +11,7 @@
 
 html {
     scroll-padding-top: calc(var(--nav-height) + 30px);
+    scroll-behavior: smooth;
     width: 100%;
 }
 
