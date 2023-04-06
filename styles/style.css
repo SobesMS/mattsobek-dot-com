@@ -217,12 +217,26 @@ nav .social a:hover > svg {
 }
 
 .site-hero {
-    padding-bottom: 9rem;
+    position: relative;
+    max-width: 55rem;
+    margin-inline: auto;
+    height: 44rem;
+}
+
+#hdr-img {
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    transform: rotate(12.5deg) scale(85%);
+}
+
+#hdr-txt {
+    position: absolute;
+    top: 28rem;
+    margin-left: 3rem;
 }
 
 .site-title {
-    max-width: 55rem;
-    margin-top: 27rem;
     margin-bottom: 1rem;
     font-size: 3.5rem;
     font-weight: 800;
@@ -240,7 +254,26 @@ section {
     font-size: 2.25rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .site-hero {
+        position: static;
+        max-width: 55rem;
+        margin-inline: auto;
+        height: auto;
+        padding-bottom: 6rem;
+    }
+    
+    #hdr-img {
+        position: static;
+        transform: rotate(0) scale(95%);
+        margin-top: 6rem;
+    }
+    
+    #hdr-txt {
+        position: static;
+        margin-inline: 3rem;
+    }
+
     .site-title {
         font-size: 2.7rem;
     }
@@ -310,15 +343,19 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background: rgba(200, 200, 200, .3);
     border: 2px solid var(--body-light);
     border-radius: 15px;
-    min-height: 200px;
     padding: 10px 20px;
 }
 
 .portfolio-item h3 {
     text-align: center;
+}
+
+.portfolio-item img {
+    margin-inline: auto;
 }
 
 .portfolio-item p {
@@ -354,7 +391,22 @@ section {
 #contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+}
+
+.temp-contact a {
+    color: #d53369;
+    font-weight: 700;
+}
+
+.temp-contact a:hover {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    .temp-contact a {
+        color: #daae51;
+    }
 }
 
 .email-form {

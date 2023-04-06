@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- <script src="./scripts/validate-email.js"></script> -->
     <title>mattsobek.com</title>
 </head>
 <body>
@@ -44,16 +43,19 @@
     </nav>
 
     <header class="site-hero">
-        <div class="wrapper">
+        <div id="hdr-img">
+            <img src="./images/hero-polaroids.png" alt="Picture of Matt">
+        </div>
+        <div id="hdr-txt">
             <h1 class="site-title">Welcome to <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MattSobek.com</h1>
-            <p>Hi! My name is Matt Sobek and I am a Software Developer living near Cleveland, Ohio.</p>
+            <p>A Software Developer living near Cleveland, Ohio.</p>
         </div>
     </header>
 
     <section class="about-me">
         <div class="wrapper" id="about-me">
             <h2 class="section-title">About Me</h2>
-            <p>I live in a small suburb of Cleveland named North Ridgeville with my wife Jill, our cat Cooper, and our two dachshunds Maisy and Max. We built a new house here in 2021 and we couldn't be happier! Both of us have great home offices that make working from home a real joy when we are able to. We own a boat and spend most of the summer cruising around on Lake Erie.</p>
+            <p>Thirty minutes west of Cleveland, Ohio lies a suburb called North Ridgeville. That is where you'll find my wife Jill and I enjoying life with our cat Cooper, and our two dachshunds Maisy and Max. We built a new house here in 2021 and we couldn't be happier! Both of us have great home offices that make working from home a real joy when we are able to. We own a boat and spend most of the summer cruising around on Lake Erie.</p>
             <p>I'm a huge tech junkie. I love getting my hands on a new piece and discovering the possibilities. Computers, cameras, drones, video games, virtual reality, and the list goes on and on. My wife is very tolerant of my gadget habits.</p>
             <p>I love learning new things, which is a pretty important trait as a Developer because things are constantly changing. And just as much as I enjoy learning, I'm also passionate about sharing ideas with others.</p>
             <p>Thanks for stopping by to take a look at some of the stuff that I've been up to.</p>
@@ -69,6 +71,7 @@
                 <img src="https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat" alt="HTML5 badge">
                 <img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat" alt="CSS3 badge">
                 <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&style=flat" alt="JavaScript badge">
+                <img src="https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=flat" alt="PHP badge">
                 <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat" alt="React badge">
                 <img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat" alt="Node.js badge">
                 <img src="https://img.shields.io/badge/-Mocha-8D6748?logo=mocha&logoColor=white&style=flat" alt="Mocha badge">
@@ -84,38 +87,46 @@
     <section class="portfolio">
         <div class="wrapper" id="portfolio">
             <h2 class="section-title">Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, a. Tempore, blanditiis ullam ea aliquam, numquam, sequi qui quibusdam repellat aperiam cumque alias officia omnis ratione! Eveniet hic reiciendis quidem.</p>
+            <p>A sample of some of the projects that I have worked on. I will be updating this section frequently so please check back on occasion for new entries.</p>
             <div class="portfolio-cards">
                 <div class="portfolio-item">
-                    <h3>WGU Course Commander</h3>
-                    <img class="item-screenshot" src="./images/wgu_course_commander.png" alt="WGU Course Commander">
-                    <p>This Android app was developed for use in the completion of my BS of Software Development at WGU. I received an Award of Excellence for this project. The app was developed in Java and stores data in a local SQLite database.</p>
+                    <div>
+                        <h3>WGU Course Commander</h3>
+                        <img class="item-screenshot" src="./images/wgu_course_commander.png" alt="WGU Course Commander">
+                        <p>This Android app was developed for use in the completion of my BS of Software Development at WGU. I received an Award of Excellence for this project. The app was developed in Java and stores data in a local SQLite database.</p>
+                    </div>
                     <div class="portfolio-links">
                         <a href="https://github.com/SobesMS/wgu-course-commander" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <h3>Minty Fresh</h3>
-                    <img class="item-screenshot" src="./images/minty_fresh.png" alt="Minty Fresh screenshot">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quidem modi totam aliquid illo id a veniam eaque obcaecati incidunt!</p>
+                    <div>
+                        <h3>Minty Fresh</h3>
+                        <img class="item-screenshot" src="./images/minty_fresh.png" alt="Minty Fresh screenshot">
+                        <p>"Company Home Page with Flexbox" challenge from the Front-End Engineer career path on Codecademy. Concept was to create a company and build a home page from scratch using flexbox.</p>
+                    </div>
                     <div class="portfolio-links">
                         <a href="https://sobesms.github.io/flexbox-homepage/" target="_blank"><img src="https://img.shields.io/badge/-View%20Website-181717?&logoColor=white&style=flat" alt="View Website"></a>
                         <a href="https://github.com/SobesMS/flexbox-homepage" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <h3>Rock Paper Scissors</h3>
-                    <img class="item-screenshot" src="./images/rock_paper_scissors.png" alt="Rock Paper Scissors">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quidem modi totam aliquid illo id a veniam eaque obcaecati incidunt!</p>
+                    <div>
+                        <h3>Rock Paper Scissors</h3>
+                        <img class="item-screenshot" src="./images/rock_paper_scissors.png" alt="Rock Paper Scissors">
+                        <p>This was one of my web development projects built while earning my BS of Software Development at WGU. The project started as a very basic terminal based rock-paper-scissors game built in JavaScript. After completion of the project, I developed a clean graphic interface using HTML and CSS.</p>
+                    </div>
                     <div class="portfolio-links">
                         <a href="https://sobesms.github.io/rock-paper-scissors/" target="_blank"><img src="https://img.shields.io/badge/-Play%20Game-181717?&logoColor=white&style=flat" alt="Play Game"></a>
                         <a href="https://github.com/SobesMS/rock-paper-scissors" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <h3>The Summit</h3>
-                    <img class="item-screenshot" src="./images/the_summit.png" alt="The Summit">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quidem modi totam aliquid illo id a veniam eaque obcaecati incidunt!</p>
+                    <div>
+                        <h3>The Summit</h3>
+                        <img class="item-screenshot" src="./images/the_summit.png" alt="The Summit">
+                        <p>"The Summit" project from the Front-End Engineer career path on Codecademy. Focus is on clickability, affordance, and signifiers. Tasked with building a clean home page that is easy to navigate.</p>
+                    </div>
                     <div class="portfolio-links">
                         <a href="https://sobesms.github.io/the-summit/" target="_blank"><img src="https://img.shields.io/badge/-View%20Website-181717?&logoColor=white&style=flat" alt="View Website"></a>
                         <a href="https://github.com/SobesMS/the-summit" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
@@ -125,14 +136,14 @@
         </div>
     </section>
 
-    <section>
+    <section class="temp-contact">
         <div class="wrapper">
-            <h2 class="section-title"></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, a. Tempore, blanditiis ullam ea aliquam, numquam, sequi qui quibusdam repellat aperiam cumque alias officia omnis ratione! Eveniet hic reiciendis quidem.</p>
+            <h2 class="section-title" id="contact">Contact</h2>
+            <p>Please reach out with any inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. You can email me at <a href="mailto:sobesms@gmail.com" target="_blank">sobesms@gmail.com</a>. I'd love to hear from you!</p>
         </div>
     </section>
 
-    <section class="contact">
+    <!-- <section class="contact">
         <div class="wrapper" id="contact">
             <h2 class="section-title">Contact</h2>
             <p>Please reach out with any inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. Use the handy form below. I'd love to hear from you!</p>
@@ -148,7 +159,7 @@
                 <input class="submit" type="submit" name="submit" value="Submit" required>
             </form>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <p>&copy;2023 - Matt Sobek</p>
