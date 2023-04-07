@@ -412,13 +412,14 @@ section {
 
 .email-form {
     display: grid;
+    align-self: center;
     grid-template-columns: auto 1fr auto 1fr;
     gap: 20px 10px;
     background: rgba(200, 200, 200, .3);
     width: 80%;
     margin-block: 2rem;
     padding: 1.5rem 2rem;
-    border: 2px solid var(--body-light);
+    border: 2px solid var(--body-dark);
     border-radius: 15px;
 }
 
@@ -428,7 +429,7 @@ section {
 
 .fname2, .lname2, .email2, .message2 {
     width: 100%;
-    border: none;
+    border: 1px solid var(--body-dark);
     border-radius: 10px;
     padding: 1px 7px;
     font-family: monospace;

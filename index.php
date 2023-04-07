@@ -137,9 +137,20 @@
     </section>
 
     <section class="temp-contact">
-        <div class="wrapper">
-            <h2 class="section-title" id="contact">Contact</h2>
-            <p>Please reach out with any inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. You can email me at <a href="mailto:sobesms@gmail.com" target="_blank">sobesms@gmail.com</a>. I'd love to hear from you!</p>
+    <div class="wrapper" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Please reach out with any inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. Use the handy form below. I'd love to hear from you!</p>
+            <form class="email-form" id='email-form' method="POST" action="./send-email.php">
+                <label class="fname1" for="fname">First Name:</label>
+                <input class="fname2" type="text" name="fname" required>
+                <label class="lname1" for="lname">Last Name:</label>
+                <input class="lname2" type="text" name="lname" required>
+                <label class="email1" for="email">Email Address:</label>
+                <input class="email2" type="email" name="email" required>
+                <label class="message1" for="message">Message:</label>
+                <textarea class="message2" name="message"></textarea>
+                <input class="submit" type="submit" name="submit" value="Submit" required>
+            </form>
         </div>
     </section>
 
