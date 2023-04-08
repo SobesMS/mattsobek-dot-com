@@ -451,6 +451,7 @@ section {
     color: #d53369;
     width: 100%;
     display: flex;
+    justify-content: left;
     align-items: center;
 }
 
@@ -460,6 +461,9 @@ section {
     }
     .php-output {
         color: #daae51;
+    }
+    .fname2, .lname2, .email2, .message2 {
+        border: none;
     }
 }
 
@@ -484,12 +488,20 @@ section {
 
 @media screen and (max-width: 850px) {
     .email-form {
-        grid-template-columns: auto 1fr;
+        grid-template-columns: auto 1fr 1fr;
         width: 90%;
+    }
+
+    .fname2 {
+        grid-area: 1 / 2 / span 1 / span 2;
+    }
+
+    .lname2 {
+        grid-area: 2 / 2 / span 1 / span 2;
     }
     
     .email2 {
-        grid-area: 3 / 2 / span 1 / span 1;
+        grid-area: 3 / 2 / span 1 / span 2;
     }
     
     .message1 {
@@ -497,17 +509,17 @@ section {
     }
     
     .message2 {
-        grid-area: 4 / 2 / span 1 / span 1;
+        grid-area: 4 / 2 / span 1 / span 2;
         min-height: 14rem;
         resize: vertical;
     }
     
     .submit {
-        grid-area: 5 / 2 / span 1 / span 1;
+        grid-area: 5 / 3 / span 1 / span 1;
     }
 
     .php-output {
-        grid-area: 5 / 1 / span 1 / span 1;
+        grid-area: 5 / 1 / span 1 / span 2;
     }
 }
 

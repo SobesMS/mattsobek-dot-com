@@ -13,6 +13,7 @@
         $email_headers = "From: ".$email_from."\r\n";
 
         mail($email_to, $email_subject, $email_content, $email_headers);
+        mail($email_from, "Thanks!", "Did I mention...thanks!", "From: noreply@mattsobek.com\r\n");
         return true;
     }
     // function IsInjected($str) {
