@@ -1,5 +1,10 @@
 <?php
     function SendEmail() {
+        if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            return false;
+            exit();
+        }
+
         $site = [
             "email" => "sobesms+msdc@gmail.com",
             "subject" => "Form Submission From mattsobek.com"
@@ -22,24 +27,4 @@
         mail($user["email"], $out_subject, $out_content, "From: noreply@mattsobek.com\r\n");
         return true;
     }
-    // function IsInjected($str) {
-    //     $injections = array(
-    //         '(\n+)',
-    //         '(\r+)',
-    //         '(\t+)',
-    //         '(%0A+)',
-    //         '(%0D+)',
-    //         '(%08+)',
-    //         '(%09+)'
-    //     );
-
-    //     $inject = join('|', $injections);
-    //     $inject = "/$inject/i";
-
-    //     if(preg_match($inject, $str)) {
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
 ?>

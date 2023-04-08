@@ -109,7 +109,7 @@ nav .social a:hover > svg {
 }
 
 /* hamburger menu */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
     nav .inline-links {
         display: none;
     }

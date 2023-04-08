@@ -13,6 +13,7 @@
         <ul class="inline-links">
             <li><a href="#">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -27,6 +28,7 @@
             <ul class="ham-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -63,7 +65,7 @@
     </section>
 
     <section class="skills">
-        <div class="wrapper">
+        <div class="wrapper" id="skills">
             <h2 class="section-title">Skills</h2>
             <p>Learning about software development has become a huge interest of mine, not just as a path to a career, but as a personal hobby. Completing my Bachelor of Science in Software Development was only the start of the journey. I spend a lot of my free time learning new things and also doing refreshers on the stuff that I already know. There are so many interesting technologies and techniques to learn and I am constantly searching for new skills to add to my development toolbox.</p>
             <h3>My development toolbox includes:</h3>
