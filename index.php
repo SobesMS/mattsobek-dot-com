@@ -141,7 +141,7 @@
     <section class="temp-contact">
     <div class="wrapper" id="contact">
             <h2 class="section-title">Contact</h2>
-            <p>Please reach out with inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. Use the handy form below. I'd love to hear from you!</p>
+            <p>To reach out with inquiries, provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi, use the handy form below. I'd love to hear from you!</p>
             <form class="email-form" id='email-form' method="POST">
                 <label class="fname1" for="fname">First Name:</label>
                 <input class="fname2" type="text" name="fname" required>
