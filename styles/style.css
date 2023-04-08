@@ -450,6 +450,16 @@ section {
     resize: vertical;
 }
 
+.php-output {
+    grid-area: 4 / 2 / span 1 / span 2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e05281;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .submit {
     grid-area: 4 / 4 / span 1 / span 1;
     width: 100px;
@@ -491,6 +501,10 @@ section {
     
     .submit {
         grid-area: 5 / 2 / span 1 / span 1;
+    }
+
+    .php-output {
+        grid-area: 5 / 1 / span 1 / span 1;
     }
 }
 

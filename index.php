@@ -139,8 +139,8 @@
     <section class="temp-contact">
     <div class="wrapper" id="contact">
             <h2 class="section-title">Contact</h2>
-            <p>Please reach out with any inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. Use the handy form below. I'd love to hear from you!</p>
-            <form class="email-form" id='email-form' method="POST" action="./send-email.php">
+            <p>Please reach out with inquiries, to provide feedback on any of my projects, if you'd like to see my resume, or if you just want to say hi. Use the handy form below. I'd love to hear from you!</p>
+            <form class="email-form" id='email-form' method="POST">
                 <label class="fname1" for="fname">First Name:</label>
                 <input class="fname2" type="text" name="fname" required>
                 <label class="lname1" for="lname">Last Name:</label>
@@ -149,6 +149,33 @@
                 <input class="email2" type="email" name="email" required>
                 <label class="message1" for="message">Message:</label>
                 <textarea class="message2" name="message"></textarea>
+                <div class="php-output">
+                <?php
+                    require('./php/email-functions.php');
+
+                    if(!empty($_POST['submit'])) {
+                        $email_to = "sobesms+msdc@gmail.com";
+                        $email_subject = "Form Submission From mattsobek.com";
+                
+                        $fname = $_POST['fname'];
+                        $lname = $_POST['lname'];
+                        $email_from = $_POST['email'];
+                        $message = $_POST['message'];
+                
+                
+                        $email_content = "From: ".$fname." ".$lname."\nEmail: ".$email_from."\n\n".$message;
+                        $email_headers = "From: ".$email_from."\r\n";
+                
+                        if(IsInjected($fname) | IsInjected($lname) | IsInjected($email_from) | IsInjected($message)) {
+                            echo "<p>Invalid submission data. Please try again.</p>";
+                            exit;
+                        }
+
+                        mail($email_to, $email_subject, $email_content, $email_headers);
+                        echo "<p>Thank you for your message.</p>";
+                    }
+                ?>
+                </div>
                 <input class="submit" type="submit" name="submit" value="Submit" required>
             </form>
         </div>
