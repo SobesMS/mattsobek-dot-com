@@ -1,19 +1,25 @@
 <?php
     function SendEmail() {
-        $email_to = "sobesms+msdc@gmail.com";
-        $email_subject = "Form Submission From mattsobek.com";
-                
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $email_from = $_POST['email'];
-        $message = $_POST['message'];
-                
-                
-        $email_content = "From: ".$fname." ".$lname."\nEmail: ".$email_from."\n\n".$message;
-        $email_headers = "From: ".$email_from."\r\n";
+        $site = [
+            "email" => "sobesms+msdc@gmail.com",
+            "subject" => "Form Submission From mattsobek.com"
+        ];
 
-        mail($email_to, $email_subject, $email_content, $email_headers);
-        mail($email_from, "Thanks!", "Did I mention...thanks!", "From: noreply@mattsobek.com\r\n");
+        $user = [
+            "fname" => $_POST['fname'],
+            "lname" => $_POST['lname'],
+            "email" => $_POST['email'],
+            "message" => $_POST['message']
+        ];
+                
+        $in_content = "From: ".$user["fname"]." ".$user["lname"]."\nEmail: ".$user["email"]."\nMessage:\n".$user["message"];
+        $in_headers = "From: ".$user["email"]."\r\n";
+
+        $out_subject = "Thank you from MattSobek.com";
+        $out_content = "Your message has been received and is greatly appreciated. I will respond to inquiries as soon as possible.\n\nRegards,\nMatt Sobek";
+
+        mail($site["email"], $site["subject"], $in_content, $in_headers);
+        mail($user["email"], $out_subject, $out_content, "From: noreply@mattsobek.com\r\n");
         return true;
     }
     // function IsInjected($str) {
