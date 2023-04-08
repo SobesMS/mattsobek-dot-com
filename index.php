@@ -151,32 +151,18 @@
                 <textarea class="message2" name="message"></textarea>
                 <div class="php-output">
                 <?php
-                    require('./php/email-functions.php');
+                    require('./php/send-email.php');
 
                     if(!empty($_POST['submit'])) {
-                        $email_to = "sobesms+msdc@gmail.com";
-                        $email_subject = "Form Submission From mattsobek.com";
-                
-                        $fname = $_POST['fname'];
-                        $lname = $_POST['lname'];
-                        $email_from = $_POST['email'];
-                        $message = $_POST['message'];
-                
-                
-                        $email_content = "From: ".$fname." ".$lname."\nEmail: ".$email_from."\n\n".$message;
-                        $email_headers = "From: ".$email_from."\r\n";
-                
-                        if(IsInjected($fname) | IsInjected($lname) | IsInjected($email_from) | IsInjected($message)) {
-                            echo "<p>Invalid submission data. Please try again.</p>";
-                            exit;
+                        if(SendEmail()) {
+                            echo "<p>Thank you for your message.</p>";
+                        } else {
+                            echo "<p>An error occurred. Please try again.</p>";
                         }
-
-                        mail($email_to, $email_subject, $email_content, $email_headers);
-                        echo "<p>Thank you for your message.</p>";
                     }
                 ?>
                 </div>
-                <input class="submit" type="submit" name="submit" value="Submit" required>
+                <input class="submit" type="submit" name="submit" value="Submit">
             </form>
         </div>
     </section>
