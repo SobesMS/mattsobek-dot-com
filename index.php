@@ -111,7 +111,7 @@
                     <div>
                         <h3>MattSobek.com</h3>
                         <img class="item-screenshot" src="./images/mattsobekdotcom.png" alt="MattSobek.com screenshot">
-                        <p>My porfolio site and the site that you are currently on. Built primarily to expand knowledge of front-end development concepts as well as promote my personal skills. On top of HTML and CSS, the site contains an PHP email form built from scratch.</p>
+                        <p>My porfolio site and the site that you are currently on. Built primarily to expand knowledge of front-end development concepts as well as promote my personal skills. On top of HTML and CSS, the site contains a PHP email form built from scratch.</p>
                     </div>
                     <div class="portfolio-links">
                         <a href="https://github.com/SobesMS/mattsobek-dot-com" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
