@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>mattsobek.com</title>
+    <title>MattSobek.com | Software Developer</title>
 </head>
 <body>
     <nav>
@@ -62,6 +62,12 @@
             <p>I love learning new things, which is a pretty important trait as a Developer because things are constantly changing. And just as much as I enjoy learning, I'm also passionate about sharing ideas with others.</p>
             <p>Thanks for stopping by to take a look at some of the stuff that I've been up to.</p>
         </div>
+        <div class="about-img-grid">
+            <img src="./images/jill_and_me.png" alt="Jill and Me">
+            <img src="./images/new_house.png" alt="New House">
+            <img src="./images/boat-dogs.png" alt="Boat Dogs">
+            <img src="./images/lazy-cat.png" alt="Lazy Cat">
+        </div>
     </section>
 
     <section class="skills">
@@ -99,6 +105,16 @@
                     </div>
                     <div class="portfolio-links">
                         <a href="https://github.com/SobesMS/wgu-course-commander" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div>
+                        <h3>MattSobek.com</h3>
+                        <img class="item-screenshot" src="./images/mattsobekdotcom.png" alt="MattSobek.com screenshot">
+                        <p>My porfolio site and the site that you are currently on. Built primarily to expand knowledge of front-end development concepts as well as promote my personal skills. On top of HTML and CSS, the site contains an PHP email form built from scratch.</p>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/SobesMS/mattsobek-dot-com" target="_blank"><img src="https://img.shields.io/badge/-View%20Source%20Code-181717?logo=github&logoColor=white&style=flat" alt="View Source Code"></a>
                     </div>
                 </div>
                 <div class="portfolio-item">
