@@ -11,7 +11,6 @@ menuButton.addEventListener("click", () => {
     } else {
         clickOutsideMenu.style.display = "block";
     }
-    console.log(clickOutsideMenu.style.display);
 });
 
 navLinks.forEach(n => n.addEventListener("click", () => {
