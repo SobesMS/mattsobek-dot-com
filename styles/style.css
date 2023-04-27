@@ -69,6 +69,13 @@ h3 {
     transform: skewY(-3deg);
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--site-light);
+        background: var(--site-dark);
+    }
+}
+
 /* header section styles */
 nav {
     position: fixed;
@@ -410,8 +417,8 @@ header {
     gap: 20px 10px;
     background: rgba(200, 200, 200, .3);
     width: 80%;
-    margin-block: 2rem;
-    padding: 1.5rem 2rem;
+    margin-block: 32px;
+    padding: 24px 32px;
     border: 2px solid var(--site-dark);
     border-radius: 15px;
 }
@@ -439,7 +446,7 @@ header {
 
 .message-input {
     grid-area: 3 / 2 / span 1 / span 3;
-    min-height: 10rem;
+    min-height: 160px;
     resize: vertical;
 }
 
@@ -460,7 +467,7 @@ header {
     justify-self: end;
     border: none;
     border-radius: 10px;
-    color: #fff;
+    color: var(--site-light);
     background: #d53369;
 }
 
@@ -506,7 +513,7 @@ header {
     
     .message-input {
         grid-area: 4 / 2 / span 1 / span 2;
-        min-height: 14rem;
+        min-height: 224px;
         resize: vertical;
     }
     
