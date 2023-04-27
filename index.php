@@ -31,7 +31,7 @@
             </a>
         </div>
     </nav>
-    <script src="./scripts/menu.js"></script>
+    
     <header>
         <img src="./images/hero-polaroids.png" alt="Picture of Matt" class="header-image">
         <h1 class="headline-1">Welcome to</h1>
@@ -168,5 +168,7 @@
     <footer >
         <p>&copy;2023 - Matt Sobek</p>
     </footer>
+    <div class="click-outside-menu"></div>
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>
