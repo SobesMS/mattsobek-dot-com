@@ -74,6 +74,10 @@ h3 {
         color: var(--site-light);
         background: var(--site-dark);
     }
+
+    li {
+        color: var(--site-dark);
+    }
 }
 
 /* header section styles */
