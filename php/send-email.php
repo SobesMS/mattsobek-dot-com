@@ -11,13 +11,13 @@
         ];
 
         $user = [
-            "fname" => $_POST['fname'],
-            "lname" => $_POST['lname'],
+            "firstName" => $_POST['first-name'],
+            "lastName" => $_POST['last-name'],
             "email" => $_POST['email'],
             "message" => $_POST['message']
         ];
                 
-        $in_content = "From: ".$user["fname"]." ".$user["lname"]."\nEmail: ".$user["email"]."\n\nMessage:\n".$user["message"];
+        $in_content = "From: ".$user["firstName"]." ".$user["lastName"]."\nEmail: ".$user["email"]."\n\nMessage:\n".$user["message"];
         $in_headers = "From: ".$user["email"]."\r\n";
 
         $out_subject = "Thank you from MattSobek.com";
