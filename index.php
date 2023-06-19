@@ -66,6 +66,7 @@
                 <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat" alt="React badge">
                 <img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat" alt="Node.js badge">
                 <img src="https://img.shields.io/badge/-Mocha-8D6748?logo=mocha&logoColor=white&style=flat" alt="Mocha badge">
+                <img src="https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white&style=flat" alt="C Sharp badge">
                 <img src="https://img.shields.io/badge/-Java-F80000?style=flat" alt="Java badge">
                 <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=flat" alt="SQLite badge">
                 <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat" alt="MySQL badge">
